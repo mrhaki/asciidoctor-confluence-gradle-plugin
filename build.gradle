@@ -1,0 +1,15 @@
+plugins {
+    id 'java-gradle-plugin'
+}
+
+group = 'com.mrhaki.gradle.asciidoctor'
+version = '0.1.0-SNAPSHOT'
+
+gradlePlugin {
+    plugins {
+        simplePlugin {
+            id = 'com.mrhaki.asciidoctor-confluence'
+            implementationClass = 'com.mrhaki.gradle.AsciidoctorConfluencePlugin'
+        }
+    }
+}
